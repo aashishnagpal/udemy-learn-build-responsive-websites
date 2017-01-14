@@ -113,6 +113,7 @@ a:visited {
   text-decoration: none;
   padding-bottom: 0.1em;
   border-bottom: 0.05em solid transparent;
+  -webkit-transition: color 0.5s, border 0.5s;
   transition: color 0.5s, border 0.5s;
 }
 
@@ -132,6 +133,7 @@ a:active {
   text-decoration: none;
   border: 0.05em solid #e67e22;
   border-radius: 20em;
+  -webkit-transition: background-color 0.5s, color 0.5s, border-color 0.5s;
   transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
@@ -195,6 +197,7 @@ cite img {
 /* ----------------------------------------------------------------- */
 
 header {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(bg-img/hero.jpg) fixed center;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(bg-img/hero.jpg) fixed center;
   background-size: cover;
   height: 100vh;
@@ -206,6 +209,7 @@ header {
   width: 100%;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -239,6 +243,7 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   border-bottom: 0.1em solid transparent;
+  -webkit-transition: border 0.5s;
   transition: border 0.5s;
 }
 
@@ -292,6 +297,7 @@ figure.meal-photo > figcaption {
   position: absolute;
   bottom: 10%;
   left: 50%;
+  -webkit-transform: translate(-50%);
   transform: translate(-50%);
   color: #fff;
   width: 85%;
@@ -306,12 +312,17 @@ figure.meal-photo > img {
   width: 100%;
   height: auto;
   opacity: 0.7;
+  -webkit-transform: scale(1.20);
   transform: scale(1.20);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 figure.meal-photo:hover > img {
   opacity: 1;
+  -webkit-transform: scale(1.03);
   transform: scale(1.03);
 }
 
@@ -327,15 +338,17 @@ figure.meal-photo:hover > figcaption {
   background-color: #e7e7e7;
 }
 
+.steps-box {
+  margin-top: 2em;
+}
+
 .steps-box:first-child {
   text-align: right;
   padding-right: 3%;
-  margin-top: 2em;
 }
 
 .steps-box:last-child {
   padding-left: 3%;
-  margin-top: 2em;
 }
 
 .iphone-image {
@@ -362,8 +375,10 @@ ol.workings-steps li:before {
   border-radius: 50%;
   padding: 0.2em 0.5em;
   font-weight: 300;
-  margin-right: 20px;
   position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 ol.workings-steps li p {
@@ -371,6 +386,7 @@ ol.workings-steps li p {
   margin-left: 4em;
   letter-spacing: 0.02em;
   line-height: 1.2;
+  text-align: justify;
 }
 
 .btn-app {
@@ -415,6 +431,7 @@ ol.workings-steps li p {
 /* ----------------------------------------------------------------- */
 
 .testimonials {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(bg-img/back-customers.jpg) fixed center;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(bg-img/back-customers.jpg) fixed center;
   background-size: cover;
   color: #fff;
@@ -561,6 +578,7 @@ footer {
 .social-nav a:visited {
   border: 0;
   color: #888;
+  -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 
@@ -570,6 +588,7 @@ footer {
 }
 
 .social-nav i {
+  -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 

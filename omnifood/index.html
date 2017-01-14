@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omnifood</title>
     <link rel="stylesheet" href="vendor/css/normalize.css"/>
     <link rel="stylesheet" href="vendor/css/grid.css"/>
     <link rel="stylesheet" href="vendor/css/ionicons.min.css"/>
     <link rel="stylesheet" href="resources/css/style.css"/>
+    <link rel="stylesheet" href="resources/css/media-queries.css"/>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
 </head>
 <body>
@@ -267,7 +269,7 @@
                     <ul class="plan-details">
                         <li><i class="ion-ios-checkmark-empty icon-small"></i> 1 meal</li>
                         <li><i class="ion-ios-checkmark-empty icon-small"></i> Order from 8 am to 12 pm</li>
-                        <li><i class="ion-ios-close-empty icon-small"></i></li>
+                        <li class="no-plan-detail"><i class="ion-ios-close-empty icon-small"></i></li>
                         <li><i class="ion-ios-checkmark-empty icon-small"></i> Free delivery</li>
                     </ul>
                 </div>
@@ -331,7 +333,7 @@
                 <div class="col span-1-of-3">
                     <label>&nbsp;</label>
                 </div>
-                <div class="col span-2-of-3">
+                <div class="col span-2-of-3 submit">
                     <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Send it!"/>
                 </div>
             </div>
