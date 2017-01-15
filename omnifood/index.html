@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Omnifood</title>
+
     <link rel="stylesheet" href="vendor/css/normalize.css"/>
     <link rel="stylesheet" href="vendor/css/grid.css"/>
     <link rel="stylesheet" href="vendor/css/ionicons.min.css"/>
+    <link rel="stylesheet" href="vendor/css/animate.css"/>
+
     <link rel="stylesheet" href="resources/css/style.css"/>
     <link rel="stylesheet" href="resources/css/media-queries.css"/>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
 </head>
 <body>
 <header>
-    <nav>
+    <nav class="">
         <div class="row">
             <img src="resources/img/logo-white.png" class="logo" alt="Omnifood logo"/>
+            <img src="resources/img/logo.png" class="logo-black" alt="Omnifood logo"/>
+            <a class="mobile-nav-icon"><i class="ion-navicon-round"></i></a>
             <ul class="main-nav">
                 <li><a href="#features">Food delivery</a></li>
                 <li><a href="#how-it-works">How it works</a></li>
@@ -26,11 +32,11 @@
     </nav>
     <div class="hero-text">
         <h1>Goodbye junk food.<br/>Hello super healthy meals.</h1>
-        <a href="#plans" class="btn btn-primary">I'm hungry</a>
-        <a href="#features" class="btn btn-default">Show me more</a>
+        <a href="#plans" class="btn btn-primary js--scroll-to-plans">I'm hungry</a>
+        <a href="#features" class="btn btn-default js--scroll-to-info">Show me more</a>
     </div>
 </header>
-<section id="features" class="features">
+<section id="features" class="features js--features-scroll">
     <div class="row">
         <h2>Get food fast &mdash; not fast food.</h2>
         <p class="long-text">
@@ -38,7 +44,7 @@
             cooking. So let us take care of that, we're really good at it, we promise!
         </p>
     </div>
-    <div class="row">
+    <div class="row js--wp-1">
         <div class="col span-1-of-4 box">
             <i class="ion-ios-infinite-outline icon-big"></i>
             <h3>Up to 365 days/year</h3>
@@ -73,28 +79,28 @@
         </div>
     </div>
 </section>
-<section class="meals">
+<section class="meals js--meals-scroll">
     <ul class="meals-showcase">
         <li>
-            <figure class="meal-photo">
+            <figure class="meal-photo js--wp-5">
                 <img src="resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables"/>
                 <figcaption>Korean bibimbap with egg and vegetables</figcaption>
             </figure>
         </li>
         <li>
-            <figure class="meal-photo">
+            <figure class="meal-photo js--wp-5">
                 <img src="resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes "/>
                 <figcaption>Simple italian pizza with cherry tomatoes</figcaption>
             </figure>
         </li>
         <li>
-            <figure class="meal-photo">
+            <figure class="meal-photo js--wp-5">
                 <img src="resources/img/3.jpg" alt="Chicken breast steak with vegetables"/>
                 <figcaption>Chicken breast steak with vegetables</figcaption>
             </figure>
         </li>
         <li>
-            <figure class="meal-photo">
+            <figure class="meal-photo js--wp-5">
                 <img src="resources/img/4.jpg" alt="Autumn pumpkin soup"/>
                 <figcaption>Autumn pumpkin soup</figcaption>
             </figure>
@@ -102,38 +108,38 @@
     </ul>
     <ul class="meals-showcase">
         <li>
-            <figure class="meal-photo">
+            <figure class="meal-photo js--wp-5">
                 <img src="resources/img/5.jpg" alt="Paleo beef steak with vegetables"/>
                 <figcaption>Paleo beef steak with vegetables</figcaption>
             </figure>
         </li>
         <li>
-            <figure class="meal-photo">
+            <figure class="meal-photo js--wp-5">
                 <img src="resources/img/6.jpg" alt="Healthy baguette with egg and vegetables"/>
                 <figcaption>Healthy baguette with egg and vegetables</figcaption>
             </figure>
         </li>
         <li>
-            <figure class="meal-photo">
+            <figure class="meal-photo js--wp-5">
                 <img src="resources/img/7.jpg" alt="Burger with cheddar and bacon"/>
                 <figcaption>Burger with cheddar and bacon</figcaption>
             </figure>
         </li>
         <li>
-            <figure class="meal-photo">
+            <figure class="meal-photo js--wp-5">
                 <img src="resources/img/8.jpg" alt="Granola with cherries and strawberries"/>
                 <figcaption>Granola with cherries and strawberries</figcaption>
             </figure>
         </li>
     </ul>
 </section>
-<section id="how-it-works" class="steps">
+<section id="how-it-works" class="steps js--steps-scroll">
     <div class="row">
         <h2>How it works &mdash; Simple as 1, 2, 3</h2>
     </div>
     <div class="row">
         <div class="col span-1-of-2 steps-box">
-            <img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="iphone-image"/>
+            <img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="iphone-image js--wp-2"/>
         </div>
         <div class="col span-1-of-2 steps-box">
             <ol class="workings-steps">
@@ -152,11 +158,11 @@
         </div>
     </div>
 </section>
-<section id="cities" class="cities">
+<section id="cities" class="cities js--cities-scroll">
     <div class="row">
         <h2>We're currently in these cities</h2>
     </div>
-    <div class="row">
+    <div class="row js--wp-3">
         <div class="col span-1-of-4 box">
             <img src="resources/img/lisbon-3.jpg" alt="Lisbon">
             <h3>Lisbon</h3>
@@ -217,13 +223,13 @@
         </div>
     </div>
 </section>
-<section id="plans" class="plans">
+<section id="plans" class="plans js--plans-scroll">
     <div class="row">
         <h2>Start eating healthy today</h2>
     </div>
     <div class="row">
         <div class="col span-1-of-3">
-            <div class="plan-box">
+            <div class="plan-box js--wp-4">
                 <div>
                     <h3>Premium</h3>
                     <div class="plan-price"><span>$399</span> / month</div>
@@ -364,5 +370,8 @@
         <p>Copyright &copy; 2017 by Omnifood. All rights reserved.</p>
     </div>
 </footer>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="vendor/js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="resources/js/script.js"></script>
 </body>
 </html>

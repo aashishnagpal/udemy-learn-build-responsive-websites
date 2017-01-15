@@ -224,6 +224,14 @@ header {
   float: left;
 }
 
+.logo-black {
+  margin: 0.25em 0;
+  height: 3em;
+  width: auto;
+  float: left;
+  display: none;
+}
+
 .main-nav {
   float: right;
   list-style: none;
@@ -242,14 +250,68 @@ header {
   padding: 0.4em 0;
   text-decoration: none;
   text-transform: uppercase;
-  border-bottom: 0.1em solid transparent;
+  border-bottom: 0.2em solid transparent;
   -webkit-transition: border 0.5s;
   transition: border 0.5s;
 }
 
 .main-nav a:hover,
 .main-nav a:active {
-  border-bottom: 0.1em solid #e67e22;
+  border-bottom: 0.2em solid #e67e22;
+}
+
+/* Sticky Navigation */
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 1;
+  box-shadow: 0 0.1em 0.1em #aaa;
+}
+
+.sticky-nav .main-nav {
+  margin-top: 1.3em;
+}
+
+.sticky-nav .main-nav a:link,
+.sticky-nav .main-nav a:visited {
+  color: #555;
+}
+
+.sticky-nav .logo {
+  display: none;
+}
+.sticky-nav .logo-black {
+  display: block;
+}
+
+/* Mobile nav */
+.mobile-nav-icon {
+  float: right;
+  font-size: 2em;
+  margin-top: 1.2em;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  display: none;
+}
+
+.mobile-nav-icon:hover {
+  color: #fff;
+}
+
+.sticky-nav .mobile-nav-icon {
+  color: #555;
+  margin-top: 0.4em;
+}
+
+.sticky-nav .mobile-nav-icon:hover {
+  color: #555;
 }
 
 /* ----------------------------------------------------------------- */
@@ -612,4 +674,22 @@ footer {
   text-align: center;
   font-size: 0.7em;
   margin: 1em auto;
+}
+
+/* ----------------------------------------------------------------- */
+/* ANIMATIONS */
+/* ----------------------------------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-5 {
+  opacity: 0;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-5.animated {
+  opacity: 1;
 }

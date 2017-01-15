@@ -87,6 +87,27 @@
 
   .main-nav {
     display: none;
+    margin-top: 2em;
+  }
+
+  .sticky-nav .main-nav {
+    margin-top: 0.5em;
+  }
+
+  .main-nav li {
+    display: block;
+    text-align: right;
+  }
+
+  .main-nav a:link,
+  .main-nav a:visited {
+    display: block;
+    border: 0;
+    font-size: 1.2em;
+  }
+
+  .mobile-nav-icon {
+    display: block;
   }
 
   .row,
