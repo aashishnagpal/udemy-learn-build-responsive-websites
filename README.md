@@ -1,5 +1,5 @@
 # Udemy Course - Build Responsive Real World Websites with HTML5 and CSS3
-Created this project while working on Udemy Course - Build Responsive Real World Websites with HTML5 and CSS3.
+Created this project while working on Udemy Course - [Build Responsive Real World Websites with HTML5 and CSS3](https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/).
 
 This contains two sub-projects
 * The Dummy Blogpost - To learn basic HTML and CSS and Organization of Front-end Projects - See [Live Demo Here](https://aashishnagpal.github.io/udemy-learn-build-responsive-websites/blogpost/)
